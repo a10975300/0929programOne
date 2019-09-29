@@ -1,0 +1,36 @@
+$bgcolor: #ccc;
+
+$link-color: #f00;
+
+@import './sprites';
+
+.icon{
+	&.icon-clock{
+	 @include sprite($img-1-);
+	 }
+	 &.icon-briefcase{
+	 @include sprite($img-2-);
+	 }
+	 &.icon-mark{
+	 @include sprite($img-3-);
+	 }
+	 &.icon-speak{
+	 @include sprite($img-4-);
+	 }
+}
+
+body{
+	background-color:$bgcolor;
+	a{
+		color: $link-color;
+	}
+	.container{
+		a{
+			color: $link-color;
+			&:hover {
+			color:#ffffff ;
+			}
+		}
+	}
+}
+
